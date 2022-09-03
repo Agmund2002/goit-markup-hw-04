@@ -16,7 +16,7 @@
   /* Інше */
   --accent-color: #2196f3;
   --btn-accent-color: #188ce8;
-  --client-color: #afb1b8;
+  --icon-color: #afb1b8;
 }
 
 body {
@@ -292,6 +292,33 @@ ul {
   line-height: calc(19 / 16);
   text-align: center;
   color: var(--secondary-txt-color);
+  margin-bottom: 16px;
+}
+
+.socials-list {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.socials-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: var(--icon-color);
+}
+
+.socials-link:hover,
+.socials-link:focus {
+  color: var(--secondary-title-color);
+  background-color: var(--accent-color);
+}
+
+.socials-icon {
+  fill: currentColor;
 }
 
 .clients-title {
@@ -313,8 +340,8 @@ ul {
   justify-content: center;
   width: 170px;
   height: 92px;
-  color: var(--client-color);
-  border: 1px solid var(--client-color);
+  color: var(--icon-color);
+  border: 1px solid var(--icon-color);
   border-radius: 4px;
 }
 
@@ -407,6 +434,15 @@ ul {
   padding: 60px 0;
 }
 
+.footer-flex {
+  display: flex;
+}
+
+.first-block {
+  width: 231px;
+  margin-right: 70px;
+}
+
 .foot {
   color: var(--secondary-title-color);
   display: inline-block;
@@ -434,4 +470,22 @@ ul {
 .address-list-item > a:hover,
 .address-list-item > a:focus {
   color: var(--accent-color);
+}
+
+.connect {
+  width: 206px;
+}
+
+.connect-title {
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  text-transform: uppercase;
+  color: var(--secondary-title-color);
+  margin-bottom: 20px;
+  margin-top: 12px;
+}
+
+.connect-link {
+  color: var(--secondary-title-color);
+  background-color: rgba(255, 255, 255, 0.1);
 }
