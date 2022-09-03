@@ -122,11 +122,18 @@ h1,h2,h3,h4.h5,h6,p,ul {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .contacts-list-item > a:hover,
 .contacts-list-item > a:focus {
   color: var(--accent-color);
+}
+
+.contact-icon {
+  fill: currentColor;
 }
 
 /* стилізація файлу index.html */
