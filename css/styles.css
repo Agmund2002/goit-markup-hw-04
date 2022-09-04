@@ -147,7 +147,9 @@ ul {
 
 .order {
   background-color: var(--main-background-color);
+  background: linear-gradient( rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4) ), url(../images/section1/bg.jpg) ;
   padding: 200px 0;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .order-title {
@@ -398,6 +400,12 @@ ul {
   width: 370px;
 }
 
+.projects-list-item:hover,
+.projects-list-item:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 .projects-link {
   text-decoration: none;
   color: currentColor;
@@ -436,6 +444,7 @@ ul {
 
 .footer-flex {
   display: flex;
+  align-items: baseline;
 }
 
 .first-block {
@@ -482,7 +491,6 @@ ul {
   text-transform: uppercase;
   color: var(--secondary-title-color);
   margin-bottom: 20px;
-  margin-top: 12px;
 }
 
 .connect-link {
