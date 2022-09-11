@@ -146,11 +146,11 @@ ul {
 /* стилізація файлу index.html */
 
 .order {
-  background: linear-gradient( rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4) ), url(../images/section1/bg.jpg) ;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background-image: linear-gradient( rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4) ), url(../images/section1/bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  box-sizing: 1600px auto;
+  background-color: rgba(47, 48, 58, 0.4);
+  box-sizing: 1600px 600px;
   padding: 200px 0;
 }
 
@@ -313,16 +313,13 @@ ul {
   height: 44px;
   border-radius: 50%;
   color: var(--icon-color);
+  fill: currentColor;
 }
 
 .socials-link:hover,
 .socials-link:focus {
   color: var(--secondary-title-color);
   background-color: var(--accent-color);
-}
-
-.socials-icon {
-  fill: currentColor;
 }
 
 .clients-title {
@@ -347,16 +344,13 @@ ul {
   color: var(--icon-color);
   border: 1px solid var(--icon-color);
   border-radius: 4px;
+  fill: currentColor;
 }
 
 .clients-list-item > a:hover,
 .clients-list-item > a:focus {
   color: var(--accent-color);
   border-color: var(--accent-color);
-}
-
-.client {
-  fill: currentColor;
 }
 
 /* завершення стилізації файлу index.html */
@@ -402,15 +396,16 @@ ul {
   width: 370px;
 }
 
-.projects-list-item:hover,
-.projects-list-item:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
 .projects-link {
+  display: block;
   text-decoration: none;
   color: currentColor;
+}
+
+.projects-link:hover,
+.projects-link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .projects-link > img {
@@ -488,6 +483,7 @@ ul {
 }
 
 .connect-title {
+  font-weight: 700;
   font-size: 14px;
   line-height: calc(16 / 14);
   text-transform: uppercase;
